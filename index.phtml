@@ -1,0 +1,39 @@
+<?php
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create Session Variables</title>
+
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+</head>
+<body class="container">
+    <div class="content">
+        <p>Enter some information to be used in the $_SESSION</p>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <form action="storesession.php" method="POST">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" name="name" type="text" placeholder="Enter your name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" name="email" type="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <input type="submit" class="button is-success">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
