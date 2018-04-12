@@ -34,5 +34,6 @@ Now in another page you can access these session variables and echo them into th
 <?php
     session_start();
     echo $_SESSION["favcolor"]; // Will return "green"
+    echo $_SESSION["favanimal"]; // Will return "cat"
 ?>
 ```
