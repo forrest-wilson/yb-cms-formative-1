@@ -14,9 +14,21 @@
 <body class="container">
     <div class="content">
         <?php
-            echo "<h2>Session Name: " . $_SESSION["name"] . "</h2>";
-            echo "<h2>Session Email: " . $_SESSION["email"] . "</h2>";
+            echo "<h2>Hello " . $_SESSION["name"] . "!</h2>";
+            echo "<h2>Your email address is " . $_SESSION["email"] . ".</h2>";
+            echo "This is what the session array looks like:<br><br>";
+            print_r($_SESSION);
         ?>
+
+        <br><br>
+
+        <a href="index.phtml" class="button is-success">Edit my details</a>
+
+        <br><br>
+
+        <form action="deletesessions.php">
+            <button class="button is-danger">Delete Session Variables</button>
+        </form>
     </div>
 </body>
 </html>
