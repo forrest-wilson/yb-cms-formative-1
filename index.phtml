@@ -21,14 +21,24 @@
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                        <input class="input" name="name" type="text" placeholder="Enter your name">
+                        <input class="input" name="name" type="text" placeholder="Enter your name" value=
+                        <?php
+                            if ($_SESSION["name"]) {
+                                echo $_SESSION["name"];
+                            }
+                        ?>>
                     </div>
                 </div>
 
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                        <input class="input" name="email" type="email" placeholder="Enter your email">
+                        <input class="input" name="email" type="email" placeholder="Enter your email" value=
+                        <?php
+                            if ($_SESSION["email"]) {
+                                echo $_SESSION["email"];
+                            }
+                        ?>>
                     </div>
                 </div>
                 <input type="submit" class="button is-success">
